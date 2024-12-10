@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula java</title>
+
+    <style>
+        body{
+            background-color: aquamarine;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Hello, Word! d </h1>
+    <p>Primeiros passos em JavaScript</p>
+    
+
+
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        document.write(` Seu nome tem ${nome.length} letras <br>`)
+        document.writeln(`Seu nome em maiúsculo é ${nome.toUpperCase()}<br>`) // maiusculo
+        document.writeln(`Seu nome minusculo é ${nome.toLowerCase()}`) // minusculo
+
+                          //  > n1
+                          //  > n1.toFixed(2)
+                          //  '1545.50'
+                          //  > n1.toFixed(2).replace('.', ',')
+                          //  '1545,50'
+                          //  n1.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})
+    </script>
+</body>
+</html>
