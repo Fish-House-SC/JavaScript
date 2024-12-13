@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando numeros</title>
+    <style>
+        html{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        body{
+            
+            border: 2px solid black;
+            background-color: red;
+            border-radius: 10px;
+            height: 90vw;
+            width: 80vw;
+            display: flex;
+            flex-flow: column nowrap;
+            
+            font-size: 18px;
+            box-shadow: 3px 3px 5px black;
+        }
+        h1{
+            align-self: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        input{
+            font: normal 16pt arial;
+            background-color: rgba(216, 123, 61, 0.753);
+            border-radius: 10px;
+            flex: 0 1 40px;
+            
+            
+            
+        }
+        div#res{
+            margin-top: 20px;
+            border: 2px dotted black;
+            align-self: center;
+            font-size: 30px;
+        }
+        input#bot{
+            margin-top: 5px;
+            background-color: rgb(228, 10, 10);
+            border: 2px solid black;
+            border-radius: 20px;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.555);
+        }
+        input#bot:hover{
+            background-color: black;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <input type="number" name="txtn1" id="txtn1">
+    <input type="number" name="txtn2" id="txtn2">
+    <input id="bot" type="button" value="Somar" onclick="somar()"  onmouseenter="clicar()" onmouseout="sair()" >
+    <div id="res" >Resuldado</div>
+    <script>
+     //     function clicar(){
+     //       var a = window.document.getElementById('res')
+     //       a.style.color = "red"
+     //   }
+     //   function sair(){
+     //       var a = window.document.getElementById('res')
+     //       a.style.color = "black"
+     //   }
+        function somar(){
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma entra ${n1} e ${n2} é igual a ${s}`
+        }
+      
+    </script>
+</body>
+</html>
