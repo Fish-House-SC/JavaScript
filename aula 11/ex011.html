@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Sistemna de Nacionalidade</h1>
+    <p>Qual seu pais de origem</p><input type="text" name="nac" id="nac">
+    <input type="button" value="Aplicar" onclick="aplicar()">
+    <div id="res">
+
+    </div>
+    
+    <script>
+        function aplicar(){
+            var txtv = document.getElementById('nac')
+            var res = document.getElementById('res')
+            var naci = txtv.value.trim()
+
+            res.innerHTML = `Seu pais de origem é ${naci} `
+            if (naci.toLowerCase() === 'brasil') {
+               res.innerHTML += ` Bem Vindo de volto `
+            } if (naci.toLowerCase() ==='eua') {
+                res.innerHTML += 'Welcon my friend'
+            } else {
+                res.innerHTML += 'Siga para aufandega'}
+            }
+           
+            
+        
+        
+    </script>
+</body>
+</html>
