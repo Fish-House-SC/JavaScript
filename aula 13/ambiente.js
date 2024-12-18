@@ -1,10 +1,20 @@
 
+console.log('Vai começar')
+for(var c =1; c<=10; c++){
+    console.log(c)
+}
+console.log('Final da contagem')
+
+
+
+
+/*
 var c = 1
 do {
     console.log(`Passo ${c}`)
     c++
 } while (c <= 10)
-
+*/
 
 
 
